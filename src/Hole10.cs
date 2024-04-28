@@ -208,7 +208,7 @@ namespace BusyDial
             int n = numerals.Length;
             for (int i = 0; i < n; i++)
             {
-                numerals[i] = (char)((numerals[i] + 1) % 10 + 4);
+                numerals[i] = (char)((numerals[i] + 1) % 10 + nEndToEnd - 10 + 1);
             }
 
             // スタート画像を作る
